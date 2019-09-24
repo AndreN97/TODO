@@ -7,8 +7,37 @@ namespace TODO
     {
         static void Main(string[] args)
         {
-            
-            
+            bool shouldRun = true;
+
+            while (shouldRun)
+            {
+                Clear();
+
+                WriteLine("1. Add todo");
+                WriteLine("2. List todo");
+                WriteLine("3. Exit");
+
+                ConsoleKeyInfo keyPressed = ReadKey();
+
+                switch (keyPressed.Key)
+                {
+                    case ConsoleKey.D1:
+
+                        break;
+
+                    case ConsoleKey.D2:
+
+                        break;
+
+                    case ConsoleKey.D3:
+                        shouldRun = false;
+                        break;
+
+                    default:
+                        break;
+                }
+
+            }
         }
     }
 }
